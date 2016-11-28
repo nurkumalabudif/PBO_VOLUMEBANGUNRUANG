@@ -56,8 +56,10 @@ public class frame7_11 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
+        jTabbedPane1.setBackground(new java.awt.Color(204, 255, 204));
         jTabbedPane1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
+        balok.setBackground(new java.awt.Color(204, 204, 255));
         balok.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         balok.setLayout(null);
 
@@ -130,6 +132,7 @@ public class frame7_11 extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Balok", balok);
 
+        kubus.setBackground(new java.awt.Color(204, 255, 204));
         kubus.setLayout(null);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -163,6 +166,7 @@ public class frame7_11 extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Kubus", kubus);
 
+        bola.setBackground(new java.awt.Color(255, 204, 255));
         bola.setLayout(null);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -258,9 +262,9 @@ public class frame7_11 extends javax.swing.JFrame {
 
     private void hitungbolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hitungbolaActionPerformed
         // TODO add your handling code here:
-        int jari;
-        jari = Integer.parseInt(jaribola.getText());
-        int hasil=4*(22/7)*jari*jari;
+        double jari;
+        jari = Double.parseDouble(jaribola.getText());
+        double hasil=(4*3.14*(jari*jari*jari))/3;
         try{
             JOptionPane.showMessageDialog(null,"Volume Bola Adalah :"+hasil,"HASIL HITUNG",JOptionPane.INFORMATION_MESSAGE);
         }
